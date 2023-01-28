@@ -1,0 +1,21 @@
+@use "../../scss/abstracts/" as *;
+.manage-food {
+    margin: 30px;
+}
+
+.header {
+    @include flex(center, space-between);
+    width: 100%;
+}
+
+.header-rigth {
+    @include flex(center, center)
+}
+
+.add_new-action {
+    background-color: $green;
+    padding: 12px;
+    border-radius: $border-radius;
+    margin-right: 1rem;
+    cursor: pointer;
+}

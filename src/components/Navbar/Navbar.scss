@@ -1,0 +1,84 @@
+@use "../../scss/abstracts/" as *;
+.navbar {
+    margin-left: 20px;
+    padding: 1rem;
+    background-color: $mainBg;
+    border-bottom-left-radius: 15px;
+    @include flex(center, space-between);
+    @include tablet {
+        margin-bottom: $mobileSpacing;
+        overflow-y: hidden;
+    }
+}
+
+.navbar__search {
+    position: relative;
+    height: 50px;
+    background-color: $mainColor;
+    @include flex(center, center);
+    box-shadow: $box-shadow;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.navbar__search>input {
+    height: 100%;
+    width: 100%;
+    padding: 10px 60px 10px 20px;
+    font-size: 1rem;
+    border-radius: 15px;
+    color: $txtColor;
+    background-color: $mainBg;
+}
+
+.navbar__search>i {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 20px;
+}
+
+.navbar__right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right-item {
+    margin-right: 30px;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.notification-item:hover {
+    background-color: var(--second-bg);
+}
+
+.notification-item>i {
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.navbar__right-user {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__right-user__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.navbar__right-user__image>img {
+    width: 100%;
+}
+
+.navbar__right-user__name {
+    font-size: 1rem;
+    font-weight: 600;
+}

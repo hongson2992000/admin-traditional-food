@@ -1,0 +1,29 @@
+@use "../../scss//abstracts/" as *;
+.table-wrapper {
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 400px;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: $bodyBg;
+}
+
+tr {
+    text-align: left;
+}
+
+th,
+td {
+    text-transform: capitalize;
+    padding: 15px 10px;
+}
+
+tbody>tr:hover {
+    background-color: $mainBg;
+    color: $bodyBg;
+}
