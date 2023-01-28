@@ -32,7 +32,7 @@ const renderBody = (item, index) => (
       <i class="bx bxs-trash"></i>
     </td>
     <td>
-      <Link to="/">Xem chi tiết</Link>
+      <Link to="/" style={{color:'#059BE5'}}>Xem chi tiết</Link>
     </td>
   </tr>
 );
@@ -44,8 +44,11 @@ const ManageFood = () => {
         <div className="header-rigth">
         <div className="add_new-action">Thêm món +</div>
           <div className="navbar__search">
-            <input type="text" placeholder="Search here..." />
+            <input type="text" placeholder="Tìm kiếm..." />
             <i className="bx bx-search"></i>
+          </div>
+          <div className="filter-action">
+          <i class='bx bx-filter-alt'></i>
           </div>
         </div>
       </div>

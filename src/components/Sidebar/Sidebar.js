@@ -48,7 +48,7 @@ const Sidebar = () => {
           <div className="sidebar__menu__item__icon">
             <i className="bx bx-log-out"></i>
           </div>
-          <div className="txt-logout">Logout</div>
+          <div className="txt-logout">Đăng xuất</div>
         </div>
       </div>
     </div>

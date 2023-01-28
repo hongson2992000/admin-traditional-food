@@ -13,12 +13,14 @@ const Table = (props) => {
                 )}
               </tr>
             </thead>
-          ) : (
-            null
-          )}
-          {props.bodyData && props.renderBody ? (<tbody>
-            {props.bodyData.map((item,index)=>props.renderBody(item,index))}
-          </tbody>):null}
+          ) : null}
+          {props.bodyData && props.renderBody ? (
+            <tbody>
+              {props.bodyData.map((item, index) =>
+                props.renderBody(item, index)
+              )}
+            </tbody>
+          ) : null}
         </table>
       </div>
     </div>

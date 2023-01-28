@@ -7,10 +7,12 @@ table {
     width: 100%;
     min-width: 400px;
     border-spacing: 0;
+    border-collapse: collapse;
 }
 
 thead {
-    background-color: $bodyBg;
+    background-color: $mainBg;
+    border-bottom: 1px solid #000;
 }
 
 tr {
@@ -24,6 +26,6 @@ td {
 }
 
 tbody>tr:hover {
-    background-color: $mainBg;
-    color: $bodyBg;
+    background-color: $mainColor;
+    color: $txtColor;
 }

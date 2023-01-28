@@ -16,6 +16,13 @@
     background-color: $green;
     padding: 12px;
     border-radius: $border-radius;
-    margin-right: 1rem;
     cursor: pointer;
+}
+
+.filter-action {
+    background-color: $mainBg;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid #000;
 }

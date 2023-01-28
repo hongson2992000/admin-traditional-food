@@ -2,7 +2,7 @@
 .status-card {
     padding: 30px;
     @include flex(center, flex-start);
-    background-color: $bodyBg;
+    background-color: $mainBg;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
     position: relative;
