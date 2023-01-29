@@ -1,5 +1,5 @@
 import React from "react";
-import "./ManageMenu.scss";
+import "./ManageCustomer.scss";
 import Table from "../../components/Table/Table";
 
 import customerList from "../../assets/JsonData/customers-list.json";
@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 const customerTableHead = [
   "",
-  "Mã món ăn",
-  "Tên món ăn",
-  "Giá(VND)",
-  "Loại",
-  "Trạng thái",
+  "Mã khách hàng",
+  "Tên khách hàng",
+  "Số điện thoại",
+  "Địa chỉ",
+  "Email",
   "Hành động",
   "",
 ];
@@ -31,14 +31,26 @@ const renderBody = (item, index) => (
       <i class="bx bx-edit"></i>
       <i class="bx bxs-trash"></i>
     </td>
+    <td>
+      <Link to="/" style={{color:'#059BE5'}}>Xem chi tiết</Link>
+    </td>
   </tr>
 );
-const ManageMenu = () => {
+const ManageCustomer = () => {
   return (
     <div className="manage-food">
       <div className="header">
-        <h2 className="page-header">Quản lí menu</h2>
-        <div className="add_new-action">Thêm món +</div>
+        <h2 className="page-header">Quản lí món ăn</h2>
+        <div className="header-rigth">
+        {/* <div className="add_new-action">Thêm món +</div> */}
+          <div className="navbar__search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i className="bx bx-search"></i>
+          </div>
+          <div className="filter-action">
+          <i class='bx bx-filter-alt'></i>
+          </div>
+        </div>
       </div>
       <div className="row">
         <div className="col-12">
@@ -58,4 +70,4 @@ const ManageMenu = () => {
   );
 };
 
-export default ManageMenu;
+export default ManageCustomer;

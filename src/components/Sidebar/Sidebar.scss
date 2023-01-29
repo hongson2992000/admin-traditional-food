@@ -87,7 +87,7 @@
                 --size: 40px;
                 width: var(--size);
                 height: var(--size);
-                margin-right: 2rem;
+                margin-right: 1rem;
                 @include flex(center, center);
                 @include tablet {
                     margin-right: 1rem;

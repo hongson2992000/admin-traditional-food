@@ -1,5 +1,5 @@
 import React from "react";
-import "./ManageMenu.scss";
+import "./ManageStaff.scss";
 import Table from "../../components/Table/Table";
 
 import customerList from "../../assets/JsonData/customers-list.json";
@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 const customerTableHead = [
   "",
-  "Mã món ăn",
-  "Tên món ăn",
-  "Giá(VND)",
-  "Loại",
-  "Trạng thái",
+  "Mã nhân viên",
+  "Tên nhân viên",
+  "Số điện thoại",
+  "Địa chỉ",
+  "Email",
   "Hành động",
   "",
 ];
@@ -33,12 +33,21 @@ const renderBody = (item, index) => (
     </td>
   </tr>
 );
-const ManageMenu = () => {
+const ManageStaff = () => {
   return (
     <div className="manage-food">
       <div className="header">
-        <h2 className="page-header">Quản lí menu</h2>
-        <div className="add_new-action">Thêm món +</div>
+        <h2 className="page-header">Quản lí khách hàng</h2>
+        <div className="header-rigth">
+        {/* <div className="add_new-action">Thêm món +</div> */}
+          <div className="navbar__search">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <i className="bx bx-search"></i>
+          </div>
+          <div className="filter-action">
+          <i class='bx bx-filter-alt'></i>
+          </div>
+        </div>
       </div>
       <div className="row">
         <div className="col-12">
@@ -58,4 +67,4 @@ const ManageMenu = () => {
   );
 };
 
-export default ManageMenu;
+export default ManageStaff;
