@@ -31,6 +31,9 @@ const renderBody = (item, index) => (
       <i class="bx bx-edit"></i>
       <i class="bx bxs-trash"></i>
     </td>
+    <td>
+      <Link to="/" style={{color:'#059BE5'}}>Xem chi tiết</Link>
+    </td>
   </tr>
 );
 const ManageMenu = () => {

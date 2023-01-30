@@ -39,7 +39,7 @@ const ManageStaff = () => {
       <div className="header">
         <h2 className="page-header">Quản lí khách hàng</h2>
         <div className="header-rigth">
-        {/* <div className="add_new-action">Thêm món +</div> */}
+        <div className="add_new-action">Thêm nhân viên +</div>
           <div className="navbar__search">
             <input type="text" placeholder="Tìm kiếm..." />
             <i className="bx bx-search"></i>

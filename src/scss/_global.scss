@@ -92,9 +92,14 @@ li {
 }
 
 .table-action>i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hr {
     border: 1px solid #000;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 3px;
 }
